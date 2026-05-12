@@ -1,7 +1,3 @@
-It looks like you're building a solid repository for **Core Java** learning! Since you've just added a section on **Multithreading**, here is a clean, professional, and organized structure for your `README.md` to make it look great on [GitHub](https://github.com/mrneilk/Core-using-Java).
-
----
-
 # Core Java Programs and Small Projects
 
 Welcome to the **Core-using-Java** repository! This project serves as a comprehensive log of Java concepts, ranging from basic syntax to advanced multithreading techniques.
@@ -73,4 +69,3 @@ java FileName
 
 > **Note:** This repository is intended for educational purposes and documenting my journey through Java development.
 
-Are you planning to add a specific mini-project (like a Bank Management System or a Calculator) to one of these folders next?
