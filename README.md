@@ -1,7 +1,76 @@
-Core Java Programs and Small project
+It looks like you're building a solid repository for **Core Java** learning! Since you've just added a section on **Multithreading**, here is a clean, professional, and organized structure for your `README.md` to make it look great on [GitHub](https://github.com/mrneilk/Core-using-Java).
 
-Update:
-Threads - Multithreading
+---
+
+# Core Java Programs and Small Projects
+
+Welcome to the **Core-using-Java** repository! This project serves as a comprehensive log of Java concepts, ranging from basic syntax to advanced multithreading techniques.
+
+## 🚀 Recent Update
+
+* **Topic:** Threads & Multithreading
+* **Date:** 04 May 2026
+* **Status:** Active Development
+
+---
+
+## 📂 Project Structure
+
+The repository is organized by daily progress and specific technical modules:
+
+| Folder | Description |
+| --- | --- |
+| **DAY1** | Introduction to Java, JVM architecture, and basic syntax. |
+| **DAY2** | Object-Oriented Programming (OOP) concepts: Classes, Objects, and Inheritance. |
+| **DAY3** | Interfaces, Abstract Classes, and Exception Handling. |
+| **Threads** | Comprehensive examples of Multithreading, `Runnable` interface, and Thread Lifecycle. |
+
+---
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+* **JDK 11** or higher
+* An IDE (IntelliJ IDEA, Eclipse, or VS Code) or terminal access.
+
+### How to Run
+
+1. Clone the repository:
+```bash
+git clone https://github.com/mrneilk/Core-using-Java.git
+
+```
 
 
-Date 04 May 2026
+2. Navigate to the desired directory:
+```bash
+cd Threads
+
+```
+
+
+3. Compile and run the Java files:
+```bash
+javac FileName.java
+java FileName
+
+```
+
+
+
+---
+
+## 📝 Roadmap
+
+* [x] Basic Java Syntax
+* [x] OOP Implementation
+* [x] Multithreading Basics
+* [ ] Collection Framework (Upcoming)
+* [ ] Java I/O Streams (Upcoming)
+
+---
+
+> **Note:** This repository is intended for educational purposes and documenting my journey through Java development.
+
+Are you planning to add a specific mini-project (like a Bank Management System or a Calculator) to one of these folders next?
