@@ -64,7 +64,7 @@ java FileName
 * [x] Multithreading Basics
 * [ ] Collection Framework (Upcoming)
 * [ ] Java I/O Streams (Upcoming)
-
+* [ ] Other (Hashing etc) (WIP)
 ---
 
 > **Note:** This repository is intended for educational purposes and documenting my journey through Java development.
