@@ -5,8 +5,8 @@ Welcome to the **Core-using-Java** repository! This project serves as a comprehe
 ## 🚀 Recent Update
 
 * **Topic:** Threads & Multithreading
-* **Date:** 12 May 2026
-* **Status:** Active Development
+* **Date:** 28 May 2026
+* **Status:** Active progress
 
 ---
 
