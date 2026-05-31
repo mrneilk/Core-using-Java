@@ -16,9 +16,6 @@ The repository is organized by daily progress and specific technical modules:
 
 | Folder | Description |
 | --- | --- |
-| **DAY1** | Introduction to Java, JVM architecture, and basic syntax. |
-| **DAY2** | Object-Oriented Programming (OOP) concepts: Classes, Objects, and Inheritance. |
-| **DAY3** | Interfaces, Abstract Classes, and Exception Handling. |
 | **Threads** | Comprehensive examples of Multithreading, `Runnable` interface, and Thread Lifecycle. |
 
 ---
