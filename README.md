@@ -17,6 +17,7 @@ The repository is organized by daily progress and specific technical modules:
 | Folder | Description |
 | --- | --- |
 | **Threads** | Comprehensive examples of Multithreading, `Runnable` interface, and Thread Lifecycle. |
+| **Hashing** | Hashing using Java |
 
 ---
 
