@@ -10,6 +10,7 @@ public class ListExample {
         fruits.add("Apple");
         fruits.add("Banana");
         fruits.add("Orange");
+        fruits.add("Kiwi");
         fruits.add("Apple"); // Duplicates are fine
 
         // 3. Accessing elements by index
