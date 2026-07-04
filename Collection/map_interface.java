@@ -3,7 +3,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class MapExample {
+public class map_interface {
     public static void main(String[] args) {
         
         // 1. HashMap: Elements are unordered (stored by hash code)

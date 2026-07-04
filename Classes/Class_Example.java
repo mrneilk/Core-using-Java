@@ -24,7 +24,7 @@ class Car {
 }
 
 // 2. Main Class to run the program
-public class Main {
+public class Class_Example {
     public static void main(String[] args) {
         // Creating objects (instances) of the Car class
         Car car1 = new Car("Toyota", "Camry", 2022);
