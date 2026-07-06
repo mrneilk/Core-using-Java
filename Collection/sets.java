@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class SetExample {
+public class sets {
     public static void main(String[] args) {
         // 1. Initialization
         Set<String> programmingLanguages = new HashSet<>();
