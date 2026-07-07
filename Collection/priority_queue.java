@@ -16,7 +16,7 @@ class Task {
     }
 }
 
-public class PriorityExample {
+public class priority_queue {
     public static void main(String[] args) {
         // Define priority: lowest rank number gets processed first
         PriorityQueue<Task> taskQueue = new PriorityQueue<>(
