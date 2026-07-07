@@ -2,7 +2,7 @@ package DAY3;
 
 import java.util.Scanner;
 
-public class rotateanum {
+public class rotatenum {
     public static void main(String[] args) {
         //take input
         Scanner sc = new Scanner(System.in);

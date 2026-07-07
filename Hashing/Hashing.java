@@ -34,7 +34,7 @@ class Product {
     }
 }
 
-public class HashingDemo {
+public class Hashing {
     public static void main(String[] args) {
         // A HashSet uses hashing to instantly check if an item already exists
         HashSet<Product> storeInventory = new HashSet<>();

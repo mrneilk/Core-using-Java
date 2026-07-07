@@ -54,7 +54,7 @@ class DITextEditor {
     }
 }
 // Msin
-public class Main {
+public class DependencyInjection {
     public static void main(String[] args) {
         
         System.out.println("=== APPROACH 1: WITHOUT DEPENDENCY INJECTION ===");
