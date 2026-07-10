@@ -62,7 +62,7 @@ java FileName
 * [x] Basic Java Syntax
 * [x] OOP Implementation
 * [x] Multithreading Basics
-* [ ] Collection Framework (Upcoming)
+* [ ] Collection Framework (WIP)
 * [ ] Java I/O Streams (Upcoming)
 * [ ] Other (Hashing etc) (WIP)
 ---
