@@ -53,7 +53,7 @@ class DITextEditor {
         checker.check(text);
     }
 }
-// Msin
+// Main class to demonstrate Dependency Injection
 public class DependencyInjection {
     public static void main(String[] args) {
         
