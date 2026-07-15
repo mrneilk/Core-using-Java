@@ -19,7 +19,7 @@ The repository is organized by daily progress and specific technical modules:
 | **Threads** | Comprehensive examples of Multithreading, `Runnable` interface, and Thread Lifecycle. |
 | **Hashing** | Hashing using Java |
 | **Collections** | Sets, Queue, Map, List |
-| **Other Core Jave** | Dependency injection |
+| **Other Core Java** | Dependency injection |
 
 ---
 
