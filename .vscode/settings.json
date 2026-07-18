@@ -1,0 +1,11 @@
+{
+    "java.project.sourcePaths": [
+        "Other Core JEE",
+        "Legacy",
+        "IOStreams",
+        "Hashing",
+        "Collection",
+        "Classes",
+        "Threads"
+    ]
+}
