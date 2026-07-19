@@ -4,8 +4,8 @@ Welcome to the **Core-using-Java** repository! This project serves as a comprehe
 
 ## 🚀 Recent Update
 
-* **Topic:** Streams and Multithreading
-* **Date:** 18 July 2026
+* **Topic:** Exception Handling
+* **Date:** 19 July 2026
 * **Status:** Active progress
 
 ---
@@ -65,6 +65,7 @@ java FileName
 * [ ] Collection Framework (WIP)
 * [ ] Java I/O Streams (Upcoming)
 * [ ] Other (Hashing etc) (WIP)
+* [ ] Exception Handling (WIP)
 ---
 
 > **Note:** This repository is intended for educational purposes and documenting my journey through Java development.
