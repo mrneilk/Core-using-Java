@@ -4,8 +4,8 @@ Welcome to the **Core-using-Java** repository! This project serves as a comprehe
 
 ## 🚀 Recent Update
 
-* **Topic:** Collections
-* **Date:** 17 July 2026
+* **Topic:** Streams and Multithreading
+* **Date:** 18 July 2026
 * **Status:** Active progress
 
 ---
