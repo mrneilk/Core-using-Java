@@ -1,5 +1,5 @@
 
-public class ExceptionExample {
+public class Exception_Sample {
     public static void main(String[] args) {
         int[] numbers = {1, 2, 3};
 
