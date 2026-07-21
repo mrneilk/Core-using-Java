@@ -1,7 +1,42 @@
 
 Exception Handling in Java
 
-Type
+Overview
+Exception handling is the mechanism to handle runtime errors, allowing a program to continue or fail gracefully. Exceptions are objects that describe an unusual or erroneous situation that arises during program execution.
 
-Usage
+Types
+- Checked Exceptions: Subclasses of Exception (excluding RuntimeException). Must be declared with throws or handled with try-catch. Example: IOException, ClassNotFoundException.
+- Unchecked Exceptions: Subclasses of RuntimeException. These represent programming errors and are not required to be declared or caught. Example: NullPointerException, ArrayIndexOutOfBoundsException.
+- Errors: Subclasses of Error. Represent serious problems that applications should not try to handle (e.g., OutOfMemoryError, StackOverflowError).
+
+Core Keywords & Usage
+- try { /* code that may throw */ } catch (ExceptionType name) { /* handle */ } finally { /* always runs */ }
+- throw new ExceptionType("message"); // explicitly throw an exception
+- methodDecl() throws ExceptionType1, ExceptionType2 { /* callers must handle or declare */ }
+
+Example
+try {
+	FileInputStream fis = new FileInputStream("file.txt");
+	// read file
+} catch (FileNotFoundException e) {
+	e.printStackTrace();
+} catch (IOException e) {
+	e.printStackTrace();
+} finally {
+	// close resources
+}
+
+Custom Exceptions
+Create by extending Exception (checked) or RuntimeException (unchecked):
+class MyAppException extends Exception { public MyAppException(String msg){ super(msg); } }
+
+Best Practices
+- Catch the most specific exception first.
+- Avoid empty catch blocks.
+- Prefer try-with-resources for AutoCloseable resources.
+- Use meaningful messages and exception chaining (new Exception("msg", cause)).
+- Don't use exceptions for regular control flow.
+
+Further Reading
+- Java Language Specification and the java.lang.Exception and java.lang.Throwable docs for complete details.
 
