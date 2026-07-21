@@ -5,7 +5,7 @@ Welcome to the **Core-using-Java** repository! This project serves as a comprehe
 ## 🚀 Recent Update
 
 * **Topic:** Exception Handling
-* **Date:** 19 July 2026
+* **Date:** 21 July 2026
 * **Status:** Active progress
 
 ---
