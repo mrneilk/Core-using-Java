@@ -20,7 +20,7 @@ The repository is organized by daily progress and specific technical modules:
 | **Hashing** | Hashing using Java |
 | **Collections** | Sets, Queue, Map, List |
 | **Other Core Java** | Dependency injection |
-| **Exception Handling in Java** | Exceptions and Variations |
+| **Exception Handling** | Exceptions and Variations |
 
 ---
 
