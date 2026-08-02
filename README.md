@@ -10,7 +10,7 @@ Welcome to the **Core-using-Java** repository! This project serves as a comprehe
 
 ---
 
-## 📂 Project Structure
+## 📂 Repository Structure
 
 The repository is organized by daily progress and specific technical modules:
 
