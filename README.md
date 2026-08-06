@@ -5,7 +5,7 @@ Welcome to the **Core-using-Java** repository! This project serves as a comprehe
 ## 🚀 Recent Update
 
 * **Topic:** Java and C++ Difference
-* **Date:** 2 August 2026
+* **Date:** 6 August 2026
 * **Status:** Active progress
 
 ---
