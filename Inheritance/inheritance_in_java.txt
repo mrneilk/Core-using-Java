@@ -1,0 +1,4 @@
+Inheritance in Java
+Multiple is not allowed
+
+Using Interface Inheritance
