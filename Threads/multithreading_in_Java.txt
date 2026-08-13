@@ -1,3 +1,15 @@
 
 Explaining Multithreading in Java
 Consumer producer problem
+The Producer-Consumer Problem (also known as the Bounded-Buffer Problem) is a classic concurrency design pattern. It involves two types of threads sharing a fixed-size buffer:
+
+Producer: Generates data and puts it into the buffer.
+
+Consumer: Removes data from the buffer and processes it.
+
+The Core Synchronization Challenges
+Buffer Full: The producer must wait until space becomes available before adding more items.
+
+Buffer Empty: The consumer must wait until items are added before removing any.
+
+Race Conditions: Both threads must access the buffer safely without corrupting data or causing deadlocks.
