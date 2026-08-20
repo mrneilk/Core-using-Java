@@ -1,1 +1,11 @@
 
+Types of Classes in Java
+Concrete Class: A standard class that can be fully instantiated using new.
+
+Abstract Class (abstract): A restricted class that cannot be instantiated directly and must be extended by a subclass. It can contain abstract methods (without bodies).
+
+Final Class (final): A class that cannot be extended/inherited by any other class (e.g., java.lang.String).
+
+Nested / Inner Class: A class defined inside another enclosing class.
+
+Record (Java 14+): A special, immutable class designed purely to hold data, which automatically generates getters, equals(), hashCode(), and toString().
