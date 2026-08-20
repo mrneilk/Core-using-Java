@@ -1,1 +1,75 @@
-Core Conceptsextends Keyword: Used by a subclass to establish inheritance from a superclass.super Keyword: Refers to the immediate parent class object. Used to invoke parent constructors (super()) or access parent methods/fields overridden in the child class.Method Overriding: Defining a method in the child class with the exact same name, return type, and parameter list as a method in the parent class to supply child-specific behavior.Types of Inheritance in JavaTypeDescriptionSupported via Classes?SingleOne class inherits from a single parent class (A <- B).YesMultilevelA class inherits from a parent, which itself inherits from another (A <- B <- C).YesHierarchicalMultiple classes inherit from a single parent class (A <- B and A <- C).YesMultipleA single class inherits from multiple parent classes directly.No (Avoids ambiguity/diamond problem; achieved via interfaces instead).HybridCombination of two or more types of inheritance.No (Only possible using interfaces).Important Rules & Limitationsprivate Members are Not Inherited: Private fields and methods of a parent class cannot be directly accessed by the child class (though they can be accessed via non-private getters/setters).final Classes Cannot Be Extended: Marking a class final prevents any other class from inheriting it (e.g., public final class Vehicle).final Methods Cannot Be Overridden: Prevents child classes from changing specific parent implementation logic.The Object Class Root: Every class in Java implicitly inherits from java.lang.Object if no other superclass is specified.
+Inheritance is a core pillar of Object-Oriented Programming (OOP) in Java that allows a **subclass** (child) to inherit fields and methods from a **superclass** (parent). It models an **IS-A relationship** (e.g., a `Dog` IS-A `Animal`).
+
+The primary benefits are **code reusability** and enabling **method overriding** (runtime polymorphism).
+
+---
+
+### Basic Syntax and Example
+
+In Java, inheritance is implemented using the `extends` keyword:
+
+```java
+// Parent / Superclass
+class Animal {
+    String name;
+
+    public void eat() {
+        System.out.println(name + " is eating.");
+    }
+}
+
+// Child / Subclass inheriting from Animal
+class Dog extends Animal {
+    
+    // Additional subclass method
+    public void bark() {
+        System.out.println(name + " says Woof!");
+    }
+
+    // Overriding parent method
+    @Override
+    public void eat() {
+        System.out.println(name + " eats dog food.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+        myDog.name = "Buddy";
+
+        myDog.eat();  // Output: Buddy eats dog food. (Overridden method)
+        myDog.bark(); // Output: Buddy says Woof!
+    }
+}
+
+```
+
+---
+
+### Core Concepts
+
+* **`extends` Keyword:** Used by a subclass to establish inheritance from a superclass.
+* **`super` Keyword:** Refers to the immediate parent class object. Used to invoke parent constructors (`super()`) or access parent methods/fields overridden in the child class.
+* **Method Overriding:** Defining a method in the child class with the exact same name, return type, and parameter list as a method in the parent class to supply child-specific behavior.
+
+---
+
+### Types of Inheritance in Java
+
+| Type | Description | Supported via Classes? |
+| --- | --- | --- |
+| **Single** | One class inherits from a single parent class (`A <- B`). | **Yes** |
+| **Multilevel** | A class inherits from a parent, which itself inherits from another (`A <- B <- C`). | **Yes** |
+| **Hierarchical** | Multiple classes inherit from a single parent class (`A <- B` and `A <- C`). | **Yes** |
+| **Multiple** | A single class inherits from multiple parent classes directly. | **No** *(Avoids ambiguity/diamond problem; achieved via `interfaces` instead).* |
+| **Hybrid** | Combination of two or more types of inheritance. | **No** *(Only possible using interfaces).* |
+
+---
+
+### Important Rules & Limitations
+
+1. **`private` Members are Not Inherited:** Private fields and methods of a parent class cannot be directly accessed by the child class (though they can be accessed via non-private getters/setters).
+2. **`final` Classes Cannot Be Extended:** Marking a class `final` prevents any other class from inheriting it (e.g., `public final class Vehicle`).
+3. **`final` Methods Cannot Be Overridden:** Prevents child classes from changing specific parent implementation logic.
+4. **The `Object` Class Root:** Every class in Java implicitly inherits from `java.lang.Object` if no other superclass is specified.
