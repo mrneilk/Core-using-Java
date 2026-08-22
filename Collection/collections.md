@@ -1,0 +1,138 @@
+The **Java Collections Framework (JCF)** provides a unified architecture for representing and manipulating groups of objects. It resides in the `java.util` package.
+
+---
+
+### Core Interface Hierarchy
+
+```
+               Collection
+                   |
+     +-------------+-------------+
+     |             |             |
+   List          Set           Queue
+     |             |             |
+ ArrayList     HashSet      LinkedList
+LinkedList   TreeSet      PriorityQueue
+  Vector     LinkedHashSet   ArrayDeque
+
+```
+
+*(Note: `Map` is part of the Collections Framework, but it does **not** inherit from the `Collection` interface.)*
+
+---
+
+### Key Collection Types & Implementations
+
+| Interface | Main Implementations | Key Characteristics | Ordering / Sorting |
+| --- | --- | --- | --- |
+| **`List`** | `ArrayList`<br>
+
+<br>`LinkedList`<br>
+
+<br>`Vector` | Duplicates allowed.<br>
+
+<br>Indexed positional access. | Maintains **insertion order**. |
+| **`Set`** | `HashSet`<br>
+
+<br>`TreeSet`<br>
+
+<br>`LinkedHashSet` | **No duplicate** elements.<br>
+
+<br>Models mathematical sets. | `HashSet`: No order<br>
+
+<br>`TreeSet`: Sorted order<br>
+
+<br>`LinkedHashSet`: Insertion order |
+| **`Queue` / `Deque**` | `PriorityQueue`<br>
+
+<br>`ArrayDeque`<br>
+
+<br>`LinkedList` | First-In-First-Out (FIFO) or priority-based processing. | Priority or insertion order. |
+| **`Map`** | `HashMap`<br>
+
+<br>`TreeMap`<br>
+
+<br>`LinkedHashMap` | Key-Value pairs.<br>
+
+<br>Keys must be **unique**. | `HashMap`: No order<br>
+
+<br>`TreeMap`: Sorted by keys<br>
+
+<br>`LinkedHashMap`: Insertion order |
+
+---
+
+### Usage Examples
+
+#### 1. `List` Example (`ArrayList`)
+
+Best for dynamic arrays where fast random access $\mathcal{O}(1)$ is needed.
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListExample {
+    public static void main(String[] args) {
+        List<String> fruits = new ArrayList<>();
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Apple"); // Duplicates allowed
+
+        System.out.println(fruits.get(1)); // Output: Banana
+    }
+}
+
+```
+
+#### 2. `Set` Example (`HashSet`)
+
+Best for storing distinct values with fast lookup $\mathcal{O}(1)$ time complexity.
+
+```java
+import java.util.HashSet;
+import java.util.Set;
+
+public class SetExample {
+    public static void main(String[] args) {
+        Set<Integer> numbers = new HashSet<>();
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(10); // Duplicate ignored
+
+        System.out.println("Size: " + numbers.size()); // Output: Size: 2
+    }
+}
+
+```
+
+#### 3. `Map` Example (`HashMap`)
+
+Used to store key-value associations.
+
+```java
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapExample {
+    public static void main(String[] args) {
+        Map<String, Integer> itemPrices = new HashMap<>();
+        itemPrices.put("Coffee", 4);
+        itemPrices.put("Tea", 3);
+
+        System.out.println("Coffee Price: $" + itemPrices.get("Coffee")); // Output: 4
+    }
+}
+
+```
+
+---
+
+### Time Complexities Summary
+
+| Implementation | Get / Lookup | Add / Insert | Remove |
+| --- | --- | --- | --- |
+| **`ArrayList`** | $\mathcal{O}(1)$ | $\mathcal{O}(1)$ amortized | $\mathcal{O}(N)$ |
+| **`LinkedList`** | $\mathcal{O}(N)$ | $\mathcal{O}(1)$ at ends | $\mathcal{O}(1)$ if node known |
+| **`HashSet` / `HashMap**` | $\mathcal{O}(1)$ average | $\mathcal{O}(1)$ average | $\mathcal{O}(1)$ average |
+| **`TreeSet` / `TreeMap**` | $\mathcal{O}(\log N)$ | $\mathcal{O}(\log N)$ | $\mathcal{O}(\log N)$ |
