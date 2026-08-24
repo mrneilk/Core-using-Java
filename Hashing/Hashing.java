@@ -1,5 +1,5 @@
 import java.util.HashSet;
-import java.util.Objects;
+import java.util.Objects; // object lib?
 
 class Product {
     private String name;
