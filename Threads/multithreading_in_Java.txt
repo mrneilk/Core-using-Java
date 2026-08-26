@@ -13,3 +13,5 @@ Buffer Full: The producer must wait until space becomes available before adding 
 Buffer Empty: The consumer must wait until items are added before removing any.
 
 Race Conditions: Both threads must access the buffer safely without corrupting data or causing deadlocks.
+
+//
