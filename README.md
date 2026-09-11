@@ -5,7 +5,7 @@ Welcome to the **Core-using-Java** repository! This project serves as a comprehe
 ## 🚀 Recent Update
 
 * **Topic:** Errors and Exceptions
-* **Date:** 5 September 2026
+* **Date:** 11 September 2026
 * **Status:** Active progress
 
 ---
